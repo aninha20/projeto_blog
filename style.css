@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap');
+:root{
+    --a: #85586F;
+    --b: #F8ECD1;
+    --c: #712B75;
+    --d: #DEB6AB;
+    --e: #AC7D88 ;
+}
+
+* {
+    box-sizing: border-box;
+   
+}
+
+html, body {
+    margin: 0;
+    background: var(--d);
+}
+
+body, button, input, select, textarea{
+    font-family: 'Inter', sans-serif;
+    color:#85586F;
+
+}
+
+header{
+   height: calc(100vh - 65px);
+   display: flex;
+   align-items: center ;
+   width: 900px;
+}
+
+header .container{
+    width: 90%;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container img{
+    display: none;
+     
+}
+
+h1 {
+    font-size: 44px;
+    color:#712B75;
+}
+
+h2{
+   font-size: 24px;
+
+}
+
+h1, h2{
+    margin: 0;
+    font-weight: 600;
+}
+
+p {
+  font-size: 25px;
+}
+button {
+    background: var(--a);
+    border: 0;
+    border-radius: 16px;
+    color: white;
+    font-weight: 12px;
+    font-size: 18px;
+    
+}
+
+nav ul a{
+    font-size: 24px;
+    color: var(--b);
+    text-decoration:none;
+    margin: 0 35px;
+}
+
+section {
+    background: #712B75;
+    height: 1000px;
+}
+
+@media(max-width: 767px){
+
+    header .container {
+        width: 100%
+    }
+    header .container img{
+        display: inline;
+        height: 45px;
+        margin-bottom: 70px;
+    }
+    nav img {
+        display: none;
+    }
+
+}
