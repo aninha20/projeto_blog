@@ -63,15 +63,17 @@ header .container {
     padding: 0 100px;
 }
 
-header .container h1{
-    color: var(--c)
-}
+header .container img{
+    display: none;
+    
+} 
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 75px;
-    background: var(--b);
+    background: var(--d);
     padding: 0 100px;
     position: sticky;
     top: 0;
@@ -86,10 +88,15 @@ nav ul a {
     color: var(--c);
     text-decoration: none;
     margin: 0 35px;
+    border: solid #F8ECD1;
+    background-color: #F8ECD1;
+    border-radius: 30px;
+    padding: 5px;
+
 
 }
 section {
-    background: #712B75;
+    background: #DEB6AB;
     height: 1000px;
 }
 
@@ -97,6 +104,7 @@ section {
 
     header .container {
         width: 100%
+        
     }
     header .container img{
         display: inline;
@@ -105,6 +113,31 @@ section {
     }
     nav img {
         display: none;
+        
+    }
+    nav ul a {
+        font-size: 16px;
+        padding: 0 0 0 0;
+        margin: 0 10px;
+    }
+
+}
+/*Quando a tela for abaixo de 480px*/
+@media (max-width: 480px) {
+    header .container {
+        padding: 0 40px;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+        padding: 0 15px;
+    }
+
+    nav ul a {
+        font-size: 12px;
     }
 
 }
