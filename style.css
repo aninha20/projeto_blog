@@ -23,24 +23,6 @@ body, button, input, select, textarea{
 
 }
 
-header{
-   height: calc(100vh - 65px);
-   display: flex;
-   align-items: center ;
-   width: 900px;
-}
-
-header .container{
-    width: 90%;
-    height: fit-content;
-    padding: 0 100px;
-}
-
-header .container img{
-    display: none;
-     
-}
-
 h1 {
     font-size: 44px;
     color:#712B75;
@@ -68,14 +50,44 @@ button {
     font-size: 18px;
     
 }
-
-nav ul a{
-    font-size: 24px;
-    color: var(--b);
-    text-decoration:none;
-    margin: 0 35px;
+header{ 
+    background: var(--d);
+    height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
 }
 
+header .container {
+    width: 50% ;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container h1{
+    color: var(--c)
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    background: var(--b);
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    height: 70px;
+}
+
+nav ul a {
+    font-size: 24px;
+    color: var(--c);
+    text-decoration: none;
+    margin: 0 35px;
+
+}
 section {
     background: #712B75;
     height: 1000px;
