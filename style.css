@@ -95,9 +95,26 @@ nav ul a {
 
 
 }
-section {
-    background: #DEB6AB;
-    height: 1000px;
+nav ul a svg{
+    /*position: relative;
+    top: 2px;*/
+    display: none;
+}
+
+.about-me {
+    display: flex;
+    padding: 100px;
+
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right:50px ;
+}
+
+.about-me .img-container img {
+   height: 100%;
+   
 }
 
 @media(max-width: 767px){
