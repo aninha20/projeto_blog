@@ -24,6 +24,7 @@ body, button, input, select, textarea{
 }
 
 h1 {
+    text-shadow: 2px 5px 5px #85586F; 
     font-size: 44px;
     color:#712B75;
 }
